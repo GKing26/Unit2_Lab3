@@ -1,0 +1,15 @@
+# >- Question 1
+#  It should be changed in place_token, if it successful in placing it should change it then and then the new token will be used for the next time place_token is called
+
+# >- Question 2
+#  I will have two user inputs that asks for the row and column and then feed that into a list to determine the exact location they want to place their token
+
+# >- Question 3
+#  It should accept the token that is currently being checked inside is_winner
+
+# >- Question 4
+#  Storage because I did not read the instructions and also a checker function to see if the user inputs are good
+
+# >- Question 5
+#  use a bunch of if statements because there is only 8 possible combinations for tic tac toe
+ 
