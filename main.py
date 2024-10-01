@@ -4,6 +4,7 @@
 import os
 from tic_tac_toe import TicTacToe
 from time import sleep
+from random import choice
 def storage():
   winner = True
   turns = 0
@@ -40,7 +41,14 @@ def main():
         else:
           input("\n  A token is already at that location, please try again!")
       
-      
+        cFlag = True
+        while cFlag:
+          flag = game.place_token(choice(["1","2","3"]),choice(["1","2","3"]))
+          if flag == True:
+            winner, tokenWon = game.is_winner()
+            turns += 1
+            cFlag = False
+
       else:
         input("\n  Incorrect Input!")
     else:
